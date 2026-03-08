@@ -1,16 +1,408 @@
-Welcome to my website!
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>New webpage</title>
-    </head>
-    <body>
-        <h1> DKTX </h1>
-        <p> I am Dongkyu Kim,  an Associate Professor of School of Political Science at the University of Texas Rio Grande Valley. My research focuses on international market integration and its interaction with domestic politics. The topics of my research interests include foreign direct investment, social welfare spending, inter-state conflicts, income inequality, political participation, social protest, social capital, and fisheries governance. Thank you for visiting my website. If you have any questions, please bring it to dongkyu.kim@utrgv.edu. <\p>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professor Jane Doe | Academic Website</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        Welcome
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #222;
+      background-color: #f7f8fb;
+    }
 
-    </body>
+    a {
+      color: #0d5cab;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background: #1f3c5c;
+      color: white;
+      padding: 20px 0;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .site-title h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+
+    .site-title p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+    }
+
+    .hero {
+      background: white;
+      padding: 50px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 2fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .profile-photo {
+      width: 100%;
+      max-width: 280px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      background: #e9edf3;
+      padding: 10px;
+    }
+
+    .hero-text h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      color: #1f3c5c;
+    }
+
+    .hero-text p {
+      margin-bottom: 12px;
+      font-size: 1rem;
+    }
+
+    section {
+      padding: 50px 0;
+    }
+
+    section h2 {
+      color: #1f3c5c;
+      margin-bottom: 18px;
+      font-size: 1.8rem;
+      border-bottom: 2px solid #d7e0ea;
+      padding-bottom: 8px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      margin-bottom: 20px;
+    }
+
+    .two-column {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    ul.standard-list {
+      padding-left: 20px;
+    }
+
+    ul.standard-list li {
+      margin-bottom: 10px;
+    }
+
+    .pub-submenu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 25px;
+    }
+
+    .pub-button {
+      border: none;
+      background: #dce6f2;
+      color: #1f3c5c;
+      padding: 10px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.2s ease;
+    }
+
+    .pub-button:hover,
+    .pub-button.active {
+      background: #1f3c5c;
+      color: white;
+    }
+
+    .pub-category {
+      display: none;
+    }
+
+    .pub-category.active {
+      display: block;
+    }
+
+    .publication-item {
+      margin-bottom: 18px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #e2e2e2;
+    }
+
+    .publication-item:last-child {
+      border-bottom: none;
+    }
+
+    .publication-title {
+      font-weight: bold;
+      color: #111;
+    }
+
+    .contact p {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #1f3c5c;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 800px) {
+      .hero-grid,
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+
+      .topbar {
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container topbar">
+      <div class="site-title">
+        <h1>Professor Jane Doe</h1>
+        <p>Department of Political Science | University Name</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <img
+          src="https://via.placeholder.com/280x340?text=Professor+Photo"
+          alt="Professor Jane Doe"
+          class="profile-photo"
+        />
+      </div>
+      <div class="hero-text">
+        <h2>Welcome</h2>
+        <p>
+          I am a professor of Political Science specializing in comparative politics,
+          public policy, and democratic governance. My research focuses on political
+          institutions, social movements, and policy reform.
+        </p>
+        <p>
+          This website includes information about my research, publications, teaching,
+          and current academic projects.
+        </p>
+        <p>
+          <strong>Email:</strong> janedoe@university.edu<br />
+          <strong>Office:</strong> Liberal Arts Building 302
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About</h2>
+      <div class="card">
+        <p>
+          Professor Jane Doe is a faculty member in the Department of Political Science
+          at University Name. She received her Ph.D. from Example University and has
+          published widely on governance, public institutions, and comparative political development.
+        </p>
+        <p>
+          Her work has appeared in journals, edited volumes, and policy forums. She is
+          also committed to student mentorship and interdisciplinary collaboration.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="container">
+      <h2>Research</h2>
+      <div class="two-column">
+        <div class="card">
+          <h3>Research Interests</h3>
+          <ul class="standard-list">
+            <li>Comparative Politics</li>
+            <li>Public Policy</li>
+            <li>Democratic Institutions</li>
+            <li>Political Participation</li>
+            <li>Governance and Reform</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Current Projects</h3>
+          <ul class="standard-list">
+            <li>Institutional responses to democratic backsliding</li>
+            <li>Public sector reform and local governance</li>
+            <li>Comparative study of policy adaptation in developing democracies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="publications">
+    <div class="container">
+      <h2>Publications</h2>
+
+      <div class="card">
+        <div class="pub-submenu">
+          <button class="pub-button active" onclick="showCategory('journal')">Journal Articles</button>
+          <button class="pub-button" onclick="showCategory('books')">Books</button>
+          <button class="pub-button" onclick="showCategory('chapters')">Book Chapters</button>
+          <button class="pub-button" onclick="showCategory('working')">Working Papers</button>
+          <button class="pub-button" onclick="showCategory('other')">Other Writing</button>
+        </div>
+
+        <div id="journal" class="pub-category active">
+          <div class="publication-item">
+            <p class="publication-title">Doe, Jane. 2025. “Institutional Trust and Democratic Stability.”</p>
+            <p><em>Journal of Comparative Politics</em> 18(2): 145–167.</p>
+          </div>
+          <div class="publication-item">
+            <p class="publication-title">Doe, Jane, and John Smith. 2023. “Public Opinion and Policy Adaptation.”</p>
+            <p><em>Policy Studies Review</em> 11(4): 201–224.</p>
+          </div>
+        </div>
+
+        <div id="books" class="pub-category">
+          <div class="publication-item">
+            <p class="publication-title">Doe, Jane. 2021. <em>Governance in Transition</em>.</p>
+            <p>New York: Academic Press.</p>
+          </div>
+        </div>
+
+        <div id="chapters" class="pub-category">
+          <div class="publication-item">
+            <p class="publication-title">Doe, Jane. 2024. “Participation and Political Change.”</p>
+            <p>In <em>Rethinking Democratic Practice</em>, edited by A. Brown, 55–74. London: Scholar Press.</p>
+          </div>
+        </div>
+
+        <div id="working" class="pub-category">
+          <div class="publication-item">
+            <p class="publication-title">Doe, Jane. 2026. “Local Institutions and Policy Resilience.”</p>
+            <p>Working Paper, Department of Political Science, University Name.</p>
+          </div>
+        </div>
+
+        <div id="other" class="pub-category">
+          <div class="publication-item">
+            <p class="publication-title">Doe, Jane. 2025. “Why Institutional Design Still Matters.”</p>
+            <p>Policy Forum Essay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="teaching">
+    <div class="container">
+      <h2>Teaching</h2>
+      <div class="card">
+        <ul class="standard-list">
+          <li>Introduction to Political Science</li>
+          <li>Comparative Politics</li>
+          <li>Public Policy Analysis</li>
+          <li>Research Methods in Political Science</li>
+          <li>Seminar on Democratic Governance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="card contact">
+        <p><strong>Professor Jane Doe</strong></p>
+        <p>Department of Political Science, University Name</p>
+        <p>Email: <a href="mailto:janedoe@university.edu">janedoe@university.edu</a></p>
+        <p>Office: Liberal Arts Building 302</p>
+        <p>Office Hours: Tuesday and Thursday, 2:00 PM–4:00 PM</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Professor Jane Doe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    function showCategory(categoryId) {
+      const categories = document.querySelectorAll('.pub-category');
+      const buttons = document.querySelectorAll('.pub-button');
+
+      categories.forEach(category => {
+        category.classList.remove('active');
+      });
+
+      buttons.forEach(button => {
+        button.classList.remove('active');
+      });
+
+      document.getElementById(categoryId).classList.add('active');
+      event.target.classList.add('active');
+    }
+  </script>
+
+</body>
 </html>
