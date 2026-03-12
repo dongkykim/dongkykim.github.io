@@ -56,28 +56,16 @@
       gap: 14px;
     }
 
-    nav {
-      width: 100%;
-      border-top: 1px solid rgba(255,255,255,0.25);
-      padding-top: 10px;
-    }
-
-    .site-title h1 {
-      font-size: 2rem;
-      margin-bottom: 4px;
-      font-weight: 700;
-      letter-spacing: 0.3px;
-    }
-
-    .site-title p {
-      font-size: 0.95rem;
-      opacity: 0.92;
-    }
+nav {
+  width: 100%;
+  border-top: 1px solid rgba(255,255,255,0.25);
+  padding-top: 8px;
+}
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 18px;   /* reduced spacing */
+  gap: 20px;
   flex-wrap: wrap;
 }
 
@@ -85,15 +73,18 @@ nav a {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 600;
-  font-size: 0.85rem;   /* smaller text */
-  padding-bottom: 2px;
+  font-size: 0.82rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding-bottom: 4px;
   border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
 }
 
-    nav a:hover {
-      border-bottom: 2px solid #f4c95d;
-      color: #f4c95d;
-    }
+nav a:hover {
+  border-bottom: 2px solid #f4c95d;
+  color: #f4c95d;
+}
 
     .hero {
       padding: 70px 0 55px;
