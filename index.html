@@ -367,84 +367,380 @@ nav a:hover {
     </div>
   </section>
 
-  <section id="publications">
-    <div class="container">
-      <h2>Publications</h2>
 
-      <div class="card">
-        <div class="pub-submenu">
-          <button class="pub-button active" onclick="showCategory(event, 'Publications')">Publications</button>
-          <button class="pub-button" onclick="showCategory(event, 'IPE')">IPE</button>
-          <button class="pub-button" onclick="showCategory(event, 'chapters')">Book Chapters</button>
-          <button class="pub-button" onclick="showCategory(event, 'working')">Working Papers</button>
-          <button class="pub-button" onclick="showCategory(event, 'other')">Other Writing</button>
+<section id="publications">
+  <div class="container">
+    <h2>Publications</h2>
+
+    <div class="card">
+      <div class="pub-submenu">
+        <button class="pub-button active" onclick="showCategory(event, 'all-publications')">All</button>
+        <button class="pub-button" onclick="showCategory(event, 'ipe')">IPE / Conflict</button>
+        <button class="pub-button" onclick="showCategory(event, 'rgv')">RGV / Border</button>
+        <button class="pub-button" onclick="showCategory(event, 'trust')">Trust / Networks</button>
+        <button class="pub-button" onclick="showCategory(event, 'inequality')">Inequality / Participation</button>
+        <button class="pub-button" onclick="showCategory(event, 'chapters')">Book Chapters</button>
+        <button class="pub-button" onclick="showCategory(event, 'pedagogy')">Pedagogy / Other</button>
+      </div>
+
+      <div id="all-publications" class="pub-category active">
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://journals.sagepub.com/doi/abs/10.1177/00220027261425881" target="_blank">
+              Hoon Lee, Daehee Bak, Kyuyoung Lee, &amp; Dongkyu Kim. 2026. “Intrastate Conflict, War Finance, and the Expropriation of Foreign Firms.”
+            </a>
+          </p>
+          <p><em>Journal of Conflict Resolution</em>. Accepted.</p>
         </div>
 
-        <div id="Publications" class="pub-category active">
-          <div class="publication-item">
-            <p class="publication-title">
-              <a href="https://journals.sagepub.com/doi/abs/10.1177/00220027261425881" target="_blank">
-                Hoon Lee, Daehee Bak, Kyuyoung Lee, &amp; Dongkyu Kim. 2026. “Intrastate Conflict,
-                War Finance, and the Expropriation of Foreign Firms.”
-              </a>
-            </p>
-            <p><em>Journal of Conflict Resolution</em></p>
-          </div>
-
-          <div class="publication-item">
-            <p class="publication-title">
-              Owen Temby, Evelyn Roozee, Dongkyu Kim, Jasper R. de Vries, Derek Katznelson,
-              Antonia Sohns, &amp; Gordon Hickey. Forthcoming. “Institutional and ideational
-              features of Canadian-U.S. fishery management networks: connectivity, coherence,
-              and collaboration”
-            </p>
-            <p><em>American Review of Canadian Studies</em></p>
-          </div>
-
-          <div class="publication-item">
-            <p class="publication-title">
-              <a href="https://link.springer.com/article/10.1007/s12237-025-01616-y" target="_blank">
-                Juliet Vallejo, Evelyn Roozee, Dongkyu Kim, Andrew M. Song, Christopher A. Gabler,
-                Jasper de Vries, Antonia Sohns, Gordon M. Hickey &amp; Owen Temby. 2025.
-                “A Preliminary Investigation of Research Collaboration Through Scientific Paper
-                Co-authorship in the Gulf of Mexico.”
-              </a>
-            </p>
-            <p><em>Estuaries and Coasts</em> 11(4): 201–224.</p>
-          </div>
+        <div class="publication-item">
+          <p class="publication-title">
+            Owen Temby, Evelyn Roozee, Dongkyu Kim, Jasper R. de Vries, Derek Katznelson, Antonia Sohns, &amp; Gordon Hickey. Forthcoming. “Institutional and ideational features of Canadian-U.S. fishery management networks: connectivity, coherence, and collaboration.”
+          </p>
+          <p><em>American Review of Canadian Studies</em>. Accepted.</p>
         </div>
 
-        <div id="IPE" class="pub-category">
-          <div class="publication-item">
-            <p class="publication-title">Doe, Jane. 2021. <em>Governance in Transition</em>.</p>
-            <p>New York: Academic Press.</p>
-          </div>
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://link.springer.com/article/10.1007/s12237-025-01616-y" target="_blank">
+              Juliet Vallejo, Evelyn Roozee, Dongkyu Kim, Andrew M. Song, Christopher A. Gabler, Jasper de Vries, Antonia Sohns, Gordon M. Hickey, &amp; Owen Temby. 2025. “A Preliminary Investigation of Research Collaboration Through Scientific Paper Co-authorship in the Gulf of Mexico.”
+            </a>
+          </p>
+          <p><em>Estuaries and Coasts</em> 49(5).</p>
         </div>
 
-        <div id="chapters" class="pub-category">
-          <div class="publication-item">
-            <p class="publication-title">Doe, Jane. 2024. “Participation and Political Change.”</p>
-            <p>In <em>Rethinking Democratic Practice</em>, edited by A. Brown, 55–74. London: Scholar Press.</p>
-          </div>
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://rowman.com/ISBN/9781666941236/Politics-of-the-Rio-Grande-Valley-An-Insiders-Perspective-to-Regional-Politics" target="_blank">
+              Natasha Altema McNeely, Mi-son Kim, and Dongkyu Kim. 2025. “Assessing Latino Undergraduate Immigration Attitudes in the RGV.”
+            </a>
+          </p>
+          <p>In <em>Politics of the Rio Grande Valley: An Insider's Perspective to Regional Politics</em>, edited by Carlos D. Gutierrez-Mannix and Alexandre Couture Gagnon.</p>
         </div>
 
-        <div id="working" class="pub-category">
-          <div class="publication-item">
-            <p class="publication-title">Doe, Jane. 2026. “Local Institutions and Policy Resilience.”</p>
-            <p>Working Paper, Department of Political Science, University Name.</p>
-          </div>
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://ecologyandsociety.org/vol29/iss2/art37/" target="_blank">
+              Josiah Heyman, Alex Mayer, Alexis Racelis, Kyle Haines, Mya Brown, Owen Temby, Christopher Fuller, Fonna Forman, and Dongkyu Kim. 2024. “Water Challenges at the U.S.-Mexico Border: Learning from Community and Expert Voices.”
+            </a>
+          </p>
+          <p><em>Ecology &amp; Society</em>.</p>
         </div>
 
-        <div id="other" class="pub-category">
-          <div class="publication-item">
-            <p class="publication-title">Doe, Jane. 2025. “Why Institutional Design Still Matters.”</p>
-            <p>Policy Forum Essay.</p>
-          </div>
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://link.springer.com/article/10.1007/s10113-024-02299-8" target="_blank">
+              Derek Katznelson, Antonia Sohns, Dongkyu Kim, Evelyn Roozee, William R. Donner, Andrew Song, Jasper de Vries, Owen Temby, and Gordon M. Hickey. 2025. “Examining the presence and effects of coherence and fragmentation in the Gulf of Maine fishery management network.”
+            </a>
+          </p>
+          <p><em>Regional Environmental Change</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0308597X24001333" target="_blank">
+              Evelyn Roozee, Dongkyu Kim, Antonia Sohns, Jasper R. de Vries, Owen F. Temby, and Gordon M. Hickey. 2024. “Managing inter-organizational trust and risk perceptions in transboundary fisheries governance networks.”
+            </a>
+          </p>
+          <p><em>Marine Policy</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://journals.sagepub.com/doi/10.1177/00219096231153231" target="_blank">
+              Mi-son Kim, Dongkyu Kim, and Sang-Jic Lee. 2023. “Economic Inequality and Political Participation in East Asian Democracies: The Role of Perceived Income Inequality and Intergenerational Mobility.”
+            </a>
+          </p>
+          <p><em>Journal of Asian and African Studies</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0301479723020251" target="_blank">
+              Gordon M. Hickey, Evelyn Roozee, Remko Voogd, Jasper R. de Vries, Antonia Sohns, Dongkyu Kim, and Owen Temby. 2023. “On the architecture of collaboration in inter-organizational natural resource management networks.”
+            </a>
+          </p>
+          <p><em>Journal of Environmental Management</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.tandfonline.com/doi/full/10.1080/01419870.2022.2058170" target="_blank">
+              Natasha Altema-McNeely, Dongkyu Kim, and Mi-son Kim. 2022. “Deportation Threat and Political Engagement among Latinos in the Rio Grande Valley.”
+            </a>
+          </p>
+          <p><em>Ethnic and Racial Studies</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            Lee, Sang-Jic, Mi-son Kim, and Dongkyu Kim. 2022. “Youth perceptions of inequality.”
+          </p>
+          <p>Chapter 8 in <em>The Future of Youth in the Age of Transition</em>, National Assembly Futures Institute.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            Lee, Sang-Jic, Dongkyu Kim, and Mi-son Kim. 2022. “Happiness among the Youth.”
+          </p>
+          <p>Chapter 9 in <em>The Future of Youth in the Age of Transition</em>, National Assembly Futures Institute.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://journals.sagepub.com/doi/10.1177/00323217211012047" target="_blank">
+              Kim, Dongkyu, Mi-son Kim, and Sang-Jic Lee. 2021. “Income Inequality, Social Mobility, and Electoral Participation in the U.S. Counties: Revisiting the Inequality-Participation Nexus.”
+            </a>
+          </p>
+          <p><em>Political Studies</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-030-71297-2_27" target="_blank">
+              Kim, Dongkyu. 2021. “Teach Me If You Can: Teaching Political Science Majors Statistics at a Hispanic-Serving Institution.”
+            </a>
+          </p>
+          <p>In <em>The Palgrave Handbook of Political Research Pedagogy</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.sciencedirect.com/science/article/pii/S235234092100492X" target="_blank">
+              Kim, Dongkyu, Mi-son Kim, and Natasha Altema McNeely. 2021. “Data on Race, Inequality, and Social Capital in the U.S. Counties.”
+            </a>
+          </p>
+          <p><em>Data in Brief</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.sciencedirect.com/science/article/pii/S2589811620300284" target="_blank">
+              Song, Andrew M., Owen Temby, Dongkyu Kim, and Gordon M. Hickey. 2020. “Assessing the influence of international environmental treaty secretariats using a relational network approach.”
+            </a>
+          </p>
+          <p><em>Earth System Governance</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.tandfonline.com/doi/full/10.1016/j.soscij.2019.02.004" target="_blank">
+              Mi-son Kim, Dongkyu Kim, and Natasha Altema McNeely. 2020. “Race, Inequality, and Social Capital in the U.S. Counties.”
+            </a>
+          </p>
+          <p><em>The Social Science Journal</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://journals.sagepub.com/doi/10.1177/0739986320908245" target="_blank">
+              Kim, Dongkyu, Mi-son Kim, and Natasha Altema-McNeely. 2020. “A Comparative Analysis of the Attitudes toward the U.S.-Mexico Border Policy: Evaluating Perspectives on Border Security and Building a Wall in the Rio Grande Valley, National Hispanic and General U.S. Populations.”
+            </a>
+          </p>
+          <p><em>Hispanic Journal of Behavioral Sciences</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.cambridge.org/core/journals/latin-american-politics-and-society/article/organized-labor-strikes-and-social-spending-in-latin-america-the-synchronizing-effect-of-mass-protest/C5E93784BFB5B8B1AF962E115B2BE24A" target="_blank">
+              Kim, Dongkyu, Mi-son Kim, and Cesar Villegas. 2020. “Organized Labor Strikes and Social Spending in Latin America: The Synchronizing Effect of Mass Protest.”
+            </a>
+          </p>
+          <p><em>Latin American Politics and Society</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://academic.oup.com/isr/article/22/2/viaa017/5818123" target="_blank">
+              Kim, Dongkyu. 2020. “The Countervailing Monetary Power of Emerging Markets in the Wake of the Global Financial Crisis.”
+            </a>
+          </p>
+          <p><em>International Studies Review</em> (book review).</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.mdpi.com/2071-1050/11/21/6160" target="_blank">
+              Anthony Lima, Dongkyu Kim, Andrew M. Song, Gordon M. Hickey, and Owen Temby. 2019. “Trust and Influence in the Gulf of Mexico’s Fishery Public Management Network.”
+            </a>
+          </p>
+          <p><em>Sustainability</em> 11(21).</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.sciencedirect.com/science/article/pii/S0959378019307102" target="_blank">
+              Song, Andrew, Owen Temby, Dongkyu Kim, Angel Saavedra Cisneros, and Gordon Hickey. 2019. “Measuring, mapping and quantifying the effects of trust and informal communication on transboundary collaboration in the Great Lakes fisheries policy network.”
+            </a>
+          </p>
+          <p><em>Global Environmental Change</em>.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/determinants-of-salary-dispersion-among-political-science-faculty-the-differential-effects-of-where-you-work-institutional-characteristics-and-what-you-do-negotiate-and-publish/3A10283A14EC693DC8E8BEE3B1E52C10" target="_blank">
+              Claypool, Vicki Hesli, Brian Janssen, Dongkyu Kim, and Sara Mitchell. 2017. “Determinants of Salary Dispersion among Political Science Faculty: The Differential Effects of Where You Work (Institutional Characteristics) and What You Do (Negotiate and Publish).”
+            </a>
+          </p>
+          <p><em>PS: Political Science &amp; Politics</em> 50(1): 146–156.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://doi.org/10.1177/0192512115604346" target="_blank">
+              Kim, Dongkyu. 2016. “The Effects of Inter-state Conflicts on Foreign Investment in the Developing World: Enduring vs. Ephemeral Risk of Conflicts.”
+            </a>
+          </p>
+          <p><em>International Political Science Review</em> 37(4): 422–437.</p>
+        </div>
+
+        <div class="publication-item">
+          <p class="publication-title">
+            <a href="https://journals.sagepub.com/doi/10.1177/2053168014547663" target="_blank">
+              Frederick Solt, Dongkyu Kim, Kyu Young Lee, Spencer L. Willardson, and Seokdong Kim. 2014. “Neoliberal Reform and Protest in Latin American Democracies.”
+            </a>
+          </p>
+          <p><em>Research &amp; Politics</em> 1(July–September): 1–13.</p>
+        </div>
+
+      </div>
+
+      <div id="ipe" class="pub-category">
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://journals.sagepub.com/doi/abs/10.1177/00220027261425881" target="_blank">Hoon Lee, Daehee Bak, Kyuyoung Lee, &amp; Dongkyu Kim. 2026. “Intrastate Conflict, War Finance, and the Expropriation of Foreign Firms.”</a></p>
+          <p><em>Journal of Conflict Resolution</em>. Accepted.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.cambridge.org/core/journals/latin-american-politics-and-society/article/organized-labor-strikes-and-social-spending-in-latin-america-the-synchronizing-effect-of-mass-protest/C5E93784BFB5B8B1AF962E115B2BE24A" target="_blank">Kim, Dongkyu, Mi-son Kim, and Cesar Villegas. 2020. “Organized Labor Strikes and Social Spending in Latin America: The Synchronizing Effect of Mass Protest.”</a></p>
+          <p><em>Latin American Politics and Society</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://academic.oup.com/isr/article/22/2/viaa017/5818123" target="_blank">Kim, Dongkyu. 2020. “The Countervailing Monetary Power of Emerging Markets in the Wake of the Global Financial Crisis.”</a></p>
+          <p><em>International Studies Review</em> (book review).</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://doi.org/10.1177/0192512115604346" target="_blank">Kim, Dongkyu. 2016. “The Effects of Inter-state Conflicts on Foreign Investment in the Developing World: Enduring vs. Ephemeral Risk of Conflicts.”</a></p>
+          <p><em>International Political Science Review</em> 37(4): 422–437.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://journals.sagepub.com/doi/10.1177/2053168014547663" target="_blank">Frederick Solt, Dongkyu Kim, Kyu Young Lee, Spencer L. Willardson, and Seokdong Kim. 2014. “Neoliberal Reform and Protest in Latin American Democracies.”</a></p>
+          <p><em>Research &amp; Politics</em>.</p>
         </div>
       </div>
-    </div>
-  </section>
 
+      <div id="rgv" class="pub-category">
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://rowman.com/ISBN/9781666941236/Politics-of-the-Rio-Grande-Valley-An-Insiders-Perspective-to-Regional-Politics" target="_blank">Natasha Altema McNeely, Mi-son Kim, and Dongkyu Kim. 2025. “Assessing Latino Undergraduate Immigration Attitudes in the RGV.”</a></p>
+          <p>Book chapter.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://ecologyandsociety.org/vol29/iss2/art37/" target="_blank">Josiah Heyman et al. 2024. “Water Challenges at the U.S.-Mexico Border: Learning from Community and Expert Voices.”</a></p>
+          <p><em>Ecology &amp; Society</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.tandfonline.com/doi/full/10.1080/01419870.2022.2058170" target="_blank">Natasha Altema-McNeely, Dongkyu Kim, and Mi-son Kim. 2022. “Deportation Threat and Political Engagement among Latinos in the Rio Grande Valley.”</a></p>
+          <p><em>Ethnic and Racial Studies</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://journals.sagepub.com/doi/10.1177/0739986320908245" target="_blank">Kim, Dongkyu, Mi-son Kim, and Natasha Altema-McNeely. 2020. “A Comparative Analysis of the Attitudes toward the U.S.-Mexico Border Policy...”</a></p>
+          <p><em>Hispanic Journal of Behavioral Sciences</em>.</p>
+        </div>
+      </div>
+
+      <div id="trust" class="pub-category">
+        <div class="publication-item">
+          <p class="publication-title">Owen Temby et al. Forthcoming. “Institutional and ideational features of Canadian-U.S. fishery management networks: connectivity, coherence, and collaboration.”</p>
+          <p><em>American Review of Canadian Studies</em>. Accepted.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://link.springer.com/article/10.1007/s12237-025-01616-y" target="_blank">Juliet Vallejo et al. 2025. “A Preliminary Investigation of Research Collaboration Through Scientific Paper Co-authorship in the Gulf of Mexico.”</a></p>
+          <p><em>Estuaries and Coasts</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://link.springer.com/article/10.1007/s10113-024-02299-8" target="_blank">Derek Katznelson et al. 2025. “Examining the presence and effects of coherence and fragmentation in the Gulf of Maine fishery management network.”</a></p>
+          <p><em>Regional Environmental Change</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S0308597X24001333" target="_blank">Evelyn Roozee et al. 2024. “Managing inter-organizational trust and risk perceptions in transboundary fisheries governance networks.”</a></p>
+          <p><em>Marine Policy</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S0301479723020251" target="_blank">Gordon M. Hickey et al. 2023. “On the architecture of collaboration in inter-organizational natural resource management networks.”</a></p>
+          <p><em>Journal of Environmental Management</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.mdpi.com/2071-1050/11/21/6160" target="_blank">Anthony Lima et al. 2019. “Trust and Influence in the Gulf of Mexico’s Fishery Public Management Network.”</a></p>
+          <p><em>Sustainability</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S0959378019307102" target="_blank">Song, Andrew et al. 2019. “Measuring, mapping and quantifying the effects of trust and informal communication on transboundary collaboration in the Great Lakes fisheries policy network.”</a></p>
+          <p><em>Global Environmental Change</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S2589811620300284" target="_blank">Song, Andrew M. et al. 2020. “Assessing the influence of international environmental treaty secretariats using a relational network approach.”</a></p>
+          <p><em>Earth System Governance</em>.</p>
+        </div>
+      </div>
+
+      <div id="inequality" class="pub-category">
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://journals.sagepub.com/doi/10.1177/00219096231153231" target="_blank">Mi-son Kim, Dongkyu Kim, and Sang-Jic Lee. 2023. “Economic Inequality and Political Participation in East Asian Democracies...”</a></p>
+          <p><em>Journal of Asian and African Studies</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title">Lee, Sang-Jic, Mi-son Kim, and Dongkyu Kim. 2022. “Youth perceptions of inequality.”</p>
+          <p>Book chapter.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title">Lee, Sang-Jic, Dongkyu Kim, and Mi-son Kim. 2022. “Happiness among the Youth.”</p>
+          <p>Book chapter.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://journals.sagepub.com/doi/10.1177/00323217211012047" target="_blank">Kim, Dongkyu, Mi-son Kim, and Sang-Jic Lee. 2021. “Income Inequality, Social Mobility, and Electoral Participation in the U.S. Counties...”</a></p>
+          <p><em>Political Studies</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.sciencedirect.com/science/article/pii/S235234092100492X" target="_blank">Kim, Dongkyu, Mi-son Kim, and Natasha Altema McNeely. 2021. “Data on Race, Inequality, and Social Capital in the U.S. Counties.”</a></p>
+          <p><em>Data in Brief</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.tandfonline.com/doi/full/10.1016/j.soscij.2019.02.004" target="_blank">Mi-son Kim, Dongkyu Kim, and Natasha Altema McNeely. 2020. “Race, Inequality, and Social Capital in the U.S. Counties.”</a></p>
+          <p><em>The Social Science Journal</em>.</p>
+        </div>
+      </div>
+
+      <div id="chapters" class="pub-category">
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://rowman.com/ISBN/9781666941236/Politics-of-the-Rio-Grande-Valley-An-Insiders-Perspective-to-Regional-Politics" target="_blank">Natasha Altema McNeely, Mi-son Kim, and Dongkyu Kim. 2025. “Assessing Latino Undergraduate Immigration Attitudes in the RGV.”</a></p>
+          <p>In <em>Politics of the Rio Grande Valley: An Insider's Perspective to Regional Politics</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title">Lee, Sang-Jic, Mi-son Kim, and Dongkyu Kim. 2022. “Youth perceptions of inequality.”</p>
+          <p>Chapter 8 in <em>The Future of Youth in the Age of Transition</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title">Lee, Sang-Jic, Dongkyu Kim, and Mi-son Kim. 2022. “Happiness among the Youth.”</p>
+          <p>Chapter 9 in <em>The Future of Youth in the Age of Transition</em>.</p>
+        </div>
+      </div>
+
+      <div id="pedagogy" class="pub-category">
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://link.springer.com/chapter/10.1007/978-3-030-71297-2_27" target="_blank">Kim, Dongkyu. 2021. “Teach Me If You Can: Teaching Political Science Majors Statistics at a Hispanic-Serving Institution.”</a></p>
+          <p>In <em>The Palgrave Handbook of Political Research Pedagogy</em>.</p>
+        </div>
+        <div class="publication-item">
+          <p class="publication-title"><a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/determinants-of-salary-dispersion-among-political-science-faculty-the-differential-effects-of-where-you-work-institutional-characteristics-and-what-you-do-negotiate-and-publish/3A10283A14EC693DC8E8BEE3B1E52C10" target="_blank">Claypool, Vicki Hesli, Brian Janssen, Dongkyu Kim, and Sara Mitchell. 2017. “Determinants of Salary Dispersion among Political Science Faculty...”</a></p>
+          <p><em>PS: Political Science &amp; Politics</em>.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  
   <section id="teaching">
     <div class="container">
       <h2>Teaching</h2>
