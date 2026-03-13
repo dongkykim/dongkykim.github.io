@@ -56,10 +56,34 @@
       gap: 14px;
     }
 
+    .site-title h1 {
+      font-size: 1.6rem;
+      line-height: 1.2;
+      margin-bottom: 2px;
+    }
+
+    .site-title p {
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+
+    .site-title h1 a,
+    .site-title h1 a:visited {
+      color: white;
+      text-decoration: none;
+    }
+
+    .site-title h1 a:hover,
+    .site-title h1 a:active {
+      color: #f4c95d;
+    }
+
     nav {
       width: 100%;
       border-top: 1px solid rgba(255,255,255,0.25);
       padding-top: 8px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
     }
 
     nav ul {
@@ -79,6 +103,7 @@
       padding-bottom: 4px;
       border-bottom: 2px solid transparent;
       transition: all 0.2s ease;
+      white-space: nowrap;
     }
 
     nav a:hover {
@@ -120,7 +145,6 @@
       font-size: 1.05rem;
       max-width: 800px;
     }
-
 
     section {
       padding: 60px 0;
@@ -191,6 +215,7 @@
       cursor: pointer;
       font-family: Arial, Helvetica, sans-serif;
       font-weight: 700;
+      font-size: 0.92rem;
       transition: all 0.25s ease;
     }
 
@@ -241,93 +266,173 @@
       font-family: Arial, Helvetica, sans-serif;
     }
 
-.site-title h1 a {
-  color: white;
-  text-decoration: none;
-}
-
-.site-title h1 a:hover {
-  color: #f4c95d;
-}
-
-.site-title h1 a:hover {
-  color: #f4c95d;
-}
-
-.site-title h1 a:active {
-  color: #f4c95d;
-}    
-
-    
     @media (max-width: 850px) {
+      header {
+        padding: 12px 0;
+      }
+
+      .topbar {
+        gap: 10px;
+      }
+
+      .site-title h1 {
+        font-size: 1.3rem;
+      }
+
+      .site-title p {
+        font-size: 0.8rem;
+      }
+
+      nav ul {
+        gap: 12px;
+      }
+
+      nav a {
+        font-size: 0.72rem;
+        letter-spacing: 0.04em;
+      }
+
+      .hero,
+      section {
+        padding: 42px 0;
+      }
+
       .hero-grid,
       .two-column {
         grid-template-columns: 1fr;
       }
 
-      .hero {
-        padding-top: 50px;
+      .hero-grid {
+        gap: 24px;
       }
 
       .profile-photo {
-        max-width: 240px;
+        max-width: 200px;
+        margin: 0 auto;
+        display: block;
       }
 
       .hero-text h2 {
-        font-size: 1.9rem;
+        font-size: 1.7rem;
+        margin-bottom: 10px;
       }
-     
+
+      .hero-text p {
+        font-size: 0.98rem;
+        line-height: 1.65;
+      }
+
+      section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 18px;
+      }
+
+      h3 {
+        font-size: 1.05rem;
+      }
+
+      .card {
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      .pub-submenu {
+        gap: 8px;
+        margin-bottom: 20px;
+      }
+
+      .pub-button {
+        font-size: 0.82rem;
+        padding: 8px 12px;
+      }
+
+      .publication-item {
+        font-size: 0.9rem;
+        line-height: 1.45;
+        margin-bottom: 16px;
+        padding-bottom: 14px;
+      }
+
+      .publication-title {
+        margin-bottom: 4px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav ul {
+        flex-wrap: nowrap;
+        min-width: max-content;
+        padding-bottom: 4px;
+      }
+
+      .container {
+        width: 92%;
+      }
+
+      .hero {
+        padding-top: 34px;
+      }
+
+      .profile-photo {
+        max-width: 180px;
+      }
+
+      .pub-button {
+        font-size: 0.78rem;
+        padding: 8px 10px;
+      }
     }
   </style>
 </head>
 <body>
 
   <header>
-  <div class="container topbar">
-    <div class="site-title">
-      <h1><a href="#home">Dongkyu Kim</a></h1>
-      <p>School of Political Science, Public Affairs, Legal &amp; Security Studies</p>
-      <p>University of Texas Rio Grande Valley</p>
-    </div>
+    <div class="container topbar">
+      <div class="site-title">
+        <h1><a href="#home">Dongkyu Kim</a></h1>
+        <p>School of Political Science, Public Affairs, Legal &amp; Security Studies</p>
+        <p>University of Texas Rio Grande Valley</p>
+      </div>
 
-    <nav>
-      <ul>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#teaching">Teaching</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<section id="home" class="hero">
-  <div class="container hero-grid">
-    <div>
-      <img
-        src="Dongkyu headshot.PNG"
-        alt="Professor Dongkyu Kim"
-        class="profile-photo"
-      />
+      <nav>
+        <ul>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#teaching">Teaching</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <div class="hero-text">
-      <h2>Welcome</h2>
-      <p>
-        Welcome to my website. My name is Dr. Dongkyu Kim, Associate Professor and Director
-        of the School of Political Science, Public Affairs, Legal &amp; Security Studies and 
-         Center for Survey Research &amp; Policy Analysis at the University of Texas Rio Grande Valley.
-        I earned my Ph.D. in Political Science from the University of Iowa in 2015,
-        with specializations in International Political Economy, Comparative Political
-        Economy, and Political Methodology. My research examines how domestic policies
-        interact with international dynamics across a range of topics, including foreign
-        direct investment, social protest, conflict, inequality, political participation,
-        social capital, and social trust. Through collaborative survey projects at CSRPA, 
-        my work has expanded to include local and state politics
-        as well as broader policy issues.  
-      </p>
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div>
+        <img
+          src="Dongkyu headshot.PNG"
+          alt="Professor Dongkyu Kim"
+          class="profile-photo"
+        />
+      </div>
+
+      <div class="hero-text">
+        <h2>Welcome</h2>
+        <p>
+          Welcome to my website. My name is Dr. Dongkyu Kim, Associate Professor and Director
+          of the School of Political Science, Public Affairs, Legal &amp; Security Studies and
+          Center for Survey Research &amp; Policy Analysis at the University of Texas Rio Grande Valley.
+        </p>
+        <p>
+          I earned my Ph.D. in Political Science from the University of Iowa in 2015, with
+          specializations in International Political Economy, Comparative Political Economy,
+          and Political Methodology. My research examines how domestic policies interact with
+          international dynamics across a range of topics, including foreign direct investment,
+          social protest, conflict, inequality, political participation, social capital, and
+          social trust. Through collaborative survey projects at CSRPA, my work has expanded
+          to include local and state politics as well as broader policy issues.
+        </p>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <section id="research">
     <div class="container">
